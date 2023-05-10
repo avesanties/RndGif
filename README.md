@@ -15,7 +15,7 @@ Secondly web.properties and root.properties files are to be filled to make the a
 You have to fill app_id field for both services. Other option may be left as it is.
 
 At last you have two options to launch the app:
-* put the .war archive `/target/rndgif.war` in `.../webapps` directory of Apache Tomcat container
+* execute `mvn package` and put the .war archive `/target/rndgif.war` in `.../webapps` directory of Apache Tomcat container
 * or start the app inside a docker container executing the following commands:
     ```
     docker image build -t rndgif ./
